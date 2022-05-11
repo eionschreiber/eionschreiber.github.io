@@ -642,6 +642,27 @@ a{
     #project .right{
         width: 85%;
         padding: 0;
-        margin-top: 5rem;
+        margin-top: 1rem;
     }
+    .scroll-me{
+        display: none;
+    }
+    #project .left img{
+        width: 300px;
+    }
+    #project p{
+        font-size: 1rem;
+    }
+    #project h1{
+        font-size: 3rem;
+    }
+    #project .left{
+        width: 75%;
+    }
+    #project .left .img-container{
+        width: 100% !important;
+        height: 350px !important;
+        margin-top: 2rem !important;
+    }
+
 }
