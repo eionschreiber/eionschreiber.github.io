@@ -51,7 +51,7 @@ fadeInOut.forEach(element =>{
     ease: "slow",
     scrollTrigger:{
       trigger: element,
-      markers: true,
+      // markers: true,
       toggleActions: "restart reverse restart reverse",
       start: "-700",
       end: "1000",
