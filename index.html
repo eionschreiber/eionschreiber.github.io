@@ -1,5 +1,4 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -21,134 +20,202 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&family=Water+Brush&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,800;1,400&family=Source+Code+Pro&display=swap" rel="stylesheet">
 </head>
 
 <body id="home">
-  <!-- <nav>
-    <ul>
-        <li><a href="#slide-1">Slide 1</a></li>
-        <li><a href="#slide-2">Slide 2</a></li>
-        <li><a href="#slide-3">Slide 3</a></li>
-        <li><a href="#slide-4">Slide 4</a></li>
-    </ul>
-</nav> -->
-<div id="intro">
-  <a href="#slide-1-content">Scroll Down<span class="chevron bottom"></span></a>
-</div>
-  <div class="slides-container container">
-    <div class="slide" id="slide-1">
-      <div class="skybox animation">
-        <img id="clouds-1" class="clouds clouds-1" src="./img/clouds.png">
-        <img id="clouds-2" class="clouds clouds-2" src="./img/clouds_2.png">
-        <img id="clouds-3" class="clouds clouds-1" src="./img/clouds.png">
-        <img id="clouds-4" class="clouds clouds-2" src="./img/clouds_2.png">
-        <img id="clouds-5" class="clouds clouds-3" src="./img/clouds.png">
-        <img id="clouds-6" class="clouds clouds-4" src="./img/clouds_2.png">
-        <img id="clouds-7" class="clouds clouds-4" src="./img/clouds_2.png">
-      </div>
-      <div id="slide-1-content" class="slide-content">
-        <h1><span>Eion Schreiber</span></h1>
-        <p>I create beautiful websites your clients will love</p>
-      </div>
 
-
-       <!-- <div class="animation">
-        <svg id="d20" class="d20" width="512px" height="512px" viewBox="-16 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M106.75 215.06L1.2 370.95c-3.08 5 .1 11.5 5.93 12.14l208.26 22.07-108.64-190.1zM7.41 315.43L82.7 193.08 6.06 147.1c-2.67-1.6-6.06.32-6.06 3.43v162.81c0 4.03 5.29 5.53 7.41 2.09zM18.25 423.6l194.4 87.66c5.3 2.45 11.35-1.43 11.35-7.26v-65.67l-203.55-22.3c-4.45-.5-6.23 5.59-2.2 7.57zm81.22-257.78L179.4 22.88c4.34-7.06-3.59-15.25-10.78-11.14L17.81 110.35c-2.47 1.62-2.39 5.26.13 6.78l81.53 48.69zM240 176h109.21L253.63 7.62C250.5 2.54 245.25 0 240 0s-10.5 2.54-13.63 7.62L130.79 176H240zm233.94-28.9l-76.64 45.99 75.29 122.35c2.11 3.44 7.41 1.94 7.41-2.1V150.53c0-3.11-3.39-5.03-6.06-3.43zm-93.41 18.72l81.53-48.7c2.53-1.52 2.6-5.16.13-6.78l-150.81-98.6c-7.19-4.11-15.12 4.08-10.78 11.14l79.93 142.94zm79.02 250.21L256 438.32v65.67c0 5.84 6.05 9.71 11.35 7.26l194.4-87.66c4.03-1.97 2.25-8.06-2.2-7.56zm-86.3-200.97l-108.63 190.1 208.26-22.07c5.83-.65 9.01-7.14 5.93-12.14L373.25 215.06zM240 208H139.57L240 383.75 340.43 208H240z"/></svg>
-       </div> -->
-   </div> 
-   <div class="slide panel" id="slide-2">
-    <div class="slide-content flex fade-in">
+    <div class="cool-intro">
+    </div>
+    <nav>
+        <a class="logo" href="/"><svg id="logo" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 84 96"><title>Logo</title><g transform="translate(-8.000000, -2.000000)"><g transform="translate(11.000000, 5.000000)"><polygon id="Shape" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" points="39 0 0 22 0 67 39 90 78 68 78 23"></polygon></g></g></svg><p>ES</p></a>
+        <ul>
+            <li><a href="#about"><span class="text-green code-text">01.</span>About</a></li>
+            <li><a href="#experience"><span class="text-green code-text">02.</span>Experience</a></li>
+            <li><a href="#work"><span class="text-green code-text">03.</span>Work</a></li>
+            <li><a href="#contact"><span class="text-green code-text">04.</span>Contact</a></li>
+            <li><a href="/img/eion_schreiber_wordpress_web_developer.pdf" download class="btn">Resume</a></li>
+        </ul>
+    </nav>
+    <div id="wrapper">
+  <section id="first" class="fade-in-out">
+    <h1 class="text-green code-text">Hi my name is</h1>
+    <h2 class="text-light-gray-color">Eion Schreiber.</h2>
+    <h3 class="text-gray-color">I build things for the web.</h3>
+    <p>I'm a web developer specializing in building (and occasionally designing) digital experiences. Currently, I'm focused on building accessible, user-friendly websites.</p>
+    <a href="#work" class="btn">Check Out My Work</a>
+  </section>
+  <section id="about" class="number-section fade-in-out">
       <div class="left">
-        <img src="./img/profile_pic.jpg">
+        <h2 class="text-light-gray-color"><span class="code-text text-green">01.</span>About Me</h2>
+        <p>I'm a web developer from good ol' Oshkosh Wisconsin, mentioned breifly in a episode of <span class="underline">Loki</span>. I love to build responsive user-friendly websites that look visually appealing, with nice and fluid interactions, close attention to User Experience, and are accessible to the visually impaired (Web Accessibility Advocate) I develop websites with HTML, CSS and JavaScript. Being passionate, diligent and result oriented, I always work towards achieving best result on each project I lay my hands on.</p>
+        <p>Here are a few technologies I've been working with recently</p>
+        <ul>
+            <li>JavaScript</li>
+            <li>WordPress</li>
+            <li>PHP</li>
+            <li>jQuery</li>
+            <li>CSS/SCSS</li>
+            <li>React</li>
+        </ul>
       </div>
       <div class="right">
-        <h2>About Me</h2>
-        <!-- <div class="underline"></div> -->
-        <p>I'm a Front-End web developer from good ol' Oshkosh Wisconsin, mentioned breifly in a episode of Loki. I love to build responsive user-friendly websites that look visually appealing, with nice and fluid interactions, close attention to User Experience, and are accessible to the visually impaired (Web Accessibility Advocate) I develop websites with HTML, CSS and JavaScript. Design using Figma. Being passionate, diligent and result oriented, I always work towards achieving best result on each project I lay my hands on.</p>
-        <a class="resume" href="" style="z-index: 100;">See my Resume</a>
-      </div> 
+        <div class="overlay-container">
+          <img src="./img/profile_pic.jpg">
+          <div class="overlay"></div>
+        </div>
+      </div>
+  </section>
+  <section id="experience" class="number-section fade-in-out">
+    <h2 class="text-light-gray-color"><span class="code-text text-green">02.</span>Where I've Worked</h2>
+    <div id="expereince-container">
+      <div class="left">
+        <ul>
+            <li class="active" data-job="epic">Epic Creative</li>
+            <li data-job="ddl">DDL</li>
+            <li data-job="petco">Petco</li>
+        </ul>
+      </div>
+      <div class="right">
+        <div class="experience-container active" id="epic">
+          <h3 class="text-light-gray-color">Epic Creative</h3>
+          <p class="code-text">Web Developer</p>
+          <p class="code-text">April 2019 - May 2022</p>
+          <ul class="job">
+            <li>Primarily build sites using WordPress, but also help support some other legacy sites</li>
+            <li>Helped develop an in house theme as we transitioned away from page builders</li>
+            <li>Created custom WordPress themes from wireframes, Sketch files, and Photoshop files. </li>
+            <li>Designed new features for existing websites.</li>
+            <li>Followed ADA and WCAG guidelines when building websites. </li>
+            <li>Collaborated with Project Managers, UX Designers, and SEO Specialists on a daily basis.</li>
+            <li>Creating custom functionality to solve problems and speed up development time.</li>  
+            <li>Testing sites using multiple different browsers and devices and documenting errors</li>
+          </ul>
+        </div>
+        <div class="experience-container" id="ddl">
+          <h3 class="text-light-gray-color">Destination Dino Liam <em>(DDL)</em></h3>
+          <p class="code-text">Web Developer Intern</p>
+          <p class="code-text">December 2018 - June 2019</p>
+          <ul class="job">
+            <li>Participated in one on one meetings with the client using strategic questions to develop a plan for the website.</li> 
+            <li>Designed and developed the website theme from scratch, creating a branding strategy for future use within the non-profit. </li> 
+            <li>Created a system for the client to add events with ticket options for paid events they host.</li> 
+            <li> Developed a donation system so site users can donate to the non-profit using WooCommerce and PayPal.</li> 
+          </ul>
+        </div>
+        <div class="experience-container" id="petco">
+          <h3 class="text-light-gray-color">Petco</h3>
+          <p class="code-text">Team Lead</p>
+          <p class="code-text">June 2016 - February 2019</p>
+          <ul class="job">
+            <li>Managed a team of six people, helping employees with customer questions.</li>
+              <li>Grew department sales by teaching employees about certain products.</li>             
+            <li> If you have questions on small animals, aquatic pets (both fresh and salt), I'm your guy</li> 
+          </ul>
+        </div>
       </div>
     </div>
-    <div class="slide panel" id="slide-3" >
-      <div class="slide-content skills fade-in">
-        <h2>Skills</h2>
+</section>
+<section id="work" class="number-section fade-in-out">
+  <div class="left">
+    <h2 class="text-light-gray-color"><span class="code-text text-green">03.</span>Some Things I've Built</h2>
+  </div>
+</section>
+    <section class="card fade-in-out">
+      <div class="content">
+        <h4 class="text-light-gray-color">John Deere Virtual Pavilion</h4>
+        <p>The purpose of this website is to provide a virtual showroom like experience for John Deere. The site is separated into four groups, Agriculture, Landscaping, Sports Turf, and Golf. Each one of these categories explores a different market. This site was really fun to build, I along with another developer helped build this site. The site features 360 views of many, many products. It also features information of each of the products in the form of hotspots, and videos. It's a real show stopper for a website and I was proud to be apart of it.</p>
         <ul>
           <li>WordPress</li>
           <li>JavaScript</li>
           <li>PHP</li>
           <li>jQuery</li>
-          <li>Sass</li>
-          <li>Git</li>
-          <li>HTML</li>
-          <li>CSS</li>
+          <li>ACF</li>
+          <li>Custom Post Types</li>
         </ul>
+        <a class="btn" href="https://explore.deere.com/" target="_blank" >See Site</a>
       </div>
-    </div> 
-    <div class="slide panel" id="slide-4">
-      <div class="slide-content fade-in">
-        <h2>Stuff I've Worked On</h2>
-        <div id="work">
-          <a class="card" href="/ryan.html">
-            <div class="card-content">
-              <h4>Ryan Turf</h4>
-              <ul>
-                <li>WordPress</li>
-                <li>PHP</li>
-                <li>JS</li>
-                <li>CSS</li>
-              </ul>
-            </div>
-          </a>
-          <a class="card" href="">
-            <div class="card-content">
-              <h4>Tosa Restaurant Week</h4>
-              <ul>
-                <li>WordPress</li>
-                <li>PHP</li>
-                <li>JS</li>
-                <li>SASS</li>
-              </ul>
-            </div>
-          </a>
-          <a class="card" href="">
-            <div class="card-content">
-              <h4>Echo Robotics</h4>
-              <ul>
-                <li>WordPress</li>
-                <li>PHP</li>
-                <li>JS</li>
-                <li>CSS</li>
-              </ul>
-            </div>
-          </a>
-          <a class="card" href="">
-            <div class="card-content">
-              <h4>John Deer Virtual Pavilion</h4>
-              <ul>
-                <li>WordPress</li>
-                <li>PHP</li>
-                <li>JS</li>
-                <li>CSS</li>
-              </ul>
-            </div>
-          </a>
-        </div>
+      <div class="image">
+        <div class="img-container">
+          <img src="./img/deere.jpg">
       </div>
-    </div> 
-    <div class="slide panel" id="slide-5">
-      <div class="slide-content fade-in">
-        <h2>Contact</h2>
-        <p>I'm a Front-End web developer from good ol' Oshkosh Wisconsin, mentioned breifly in a episode of Loki</p>
       </div>
-    </div>  
-  </div>
-    
-    <button class="btn" id="fullscr">Go Fullscreen</button>
-
+    </section>
+    <section class="card fade-in-out">
+      <div class="content">
+        <h4 class="text-light-gray-color">Ryan Turf Website Build</h4>
+        <p>The purpose of this website is to really celebrate the Ryan brand and showcase their products. Ryan develops a whole bunch of commercial grade turf care equipment (for the grass lover in your life think Ryan). This site has a compare tool, a dealer locator, a resource center, and a blog. The client goals were to have a minimalist design while still having the site interactive. I worked with the designer closely with this project and contributing a lot to the motion of the site, while keeping in mind how the user would be using the site.</p>
+        <ul>
+          <li>WordPress</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li>jQuery</li>
+          <li>Elementor</li>
+          <li>Google Maps</li>
+        </ul>
+        <a class="btn" href="https://ryanturf.com" target="_blank" >See Site</a>
+      </div>
+      <div class="image">
+        <div class="img-container">
+          <img src="./img/ryan-turf.jpg">
+      </div>
+      </div>
+    </section>
+    <section class="card fade-in-out">
+      <div class="content">
+        <h4 class="text-light-gray-color">Echo Robotics Website</h4>
+        <p>The purpose of this website is to showcase the Echo Robotics line of products. Echo Robotics develops really cool and oldy big robotic lawn mowers. These lawn mowers are built for commercial facilities, golf courses, and sports fields (I've asked and you are not allowed to ride them). This site has a multiple languages using the WPML plugin, a dealer resource center, and a blog. This site was built using the help of Elementor page builder and some custom Elementor elements that I created.</p>
+        <ul>
+          <li>WordPress</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li>jQuery</li>
+          <li>Elementor</li>
+          <li>WPML</li>
+        </ul>
+        <a class="btn" href="https://echorobotics.com" target="_blank" >See Site</a>
+      </div>
+      <div class="image">
+        <div class="img-container">
+          <img src="./img/echo.jpg">
+      </div>
+      </div>
+    </section>
+    <section class="card fade-in-out">
+      <div class="content">
+        <h4 class="text-light-gray-color">Metal Craft Website</h4>
+        <p>The purpose of this website is to provide a way to advertise B2B for Metalcraft's clients. The client wanted something pretty clean to show off their facilities and what they can build. This is one of two sites, an intranet site and the main site that I built. This site has a ton of information in the form of popups, it was a challenge to implement all of the content they wanted without cluttering up the design, but I think it has been achieved.</p>
+        <ul>
+          <li>WordPress</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li>jQuery</li>
+          <li>Elementor</li>
+          <li>ACF</li>
+        </ul>
+        <a class="btn" href="https://mtlcraft.com" target="_blank" >See Site</a>
+      </div>
+      <div class="image">
+        <div class="img-container">
+          <img src="./img/metal.jpg">
+      </div>
+      </div>
+    </section>
+    <section id="contact" class="number-section fade-in-out">
+      <div class="contact-container">
+        <h2 class="text-light-gray-color"><span class="code-text text-green">04.</span>Let's get in touch!</h2>
+        <p class="text-gray-color">I'm currently looking for new opportunities, feel free to contact me if you have any questions, or you just want to say hi.</p>
+        <a class="btn" href="mailto:eionschreiber@gmail.com">Say Hello</a>
+      </div>
+  </section>
+</div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

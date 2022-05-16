@@ -1,31 +1,63 @@
 
+
+  $("#expereince-container .left li").click(function(){
+    var job = $(this).data('job');
+    $("#expereince-container .left li").removeClass('active');
+    $(this).addClass('active');
+    $(".experience-container").hide();
+    $("#" + job).fadeIn( "slow");
+  });
+
+
+
+
 // For Full Screen functionality
 let fullscreen;
 let fsEnter = document.getElementById('fullscr');
-fsEnter.addEventListener('click', function (e) {
-e.preventDefault();
-if (!fullscreen) {
-    fullscreen = true;
-    document.documentElement.requestFullscreen();
-    fsEnter.innerHTML = "Exit Fullscreen";
+if(fsEnter !== null){
+  fsEnter.addEventListener('click', function (e) {
+  e.preventDefault();
+  if (!fullscreen) {
+      fullscreen = true;
+      document.documentElement.requestFullscreen();
+      fsEnter.innerHTML = "Exit Fullscreen";
+  }
+  else {
+      fullscreen = false;
+      document.exitFullscreen();
+      fsEnter.innerHTML = "Go Fullscreen";
+  }
+  });
 }
-else {
-    fullscreen = false;
-    document.exitFullscreen();
-    fsEnter.innerHTML = "Go Fullscreen";
-}
-});
+
 
 $(document).on('click', 'a[href^="#"]', function (event) {
   event.preventDefault();
 
   $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top
+      scrollTop: $($.attr(this, 'href')).offset().top -300
   }, 500);
 });
 
 gsap.registerPlugin(ScrollTrigger, CSSRulePlugin, ScrollToPlugin);
 
+
+const fadeInOut = gsap.utils.toArray('.fade-in-out');
+fadeInOut.forEach(element =>{
+  gsap.to(element,{
+    duration: 1,
+    start: 'center center',
+    opacity: 1,
+    ease: "slow",
+    scrollTrigger:{
+      trigger: element,
+      markers: true,
+      toggleActions: "restart reverse restart reverse",
+      start: "-700",
+      end: "1000",
+    }
+  });
+});
 
 // gsap.to(".d20",{
 //     duration: 2,
@@ -50,7 +82,7 @@ fadeIn.forEach(element =>{
     ease: "slow",
     scrollTrigger:{
       trigger: element,
-      // markers: true,
+      markers: true,
       toggleActions: "restart reverse restart reverse",
       start: "-300",
       end: "400",
@@ -58,6 +90,11 @@ fadeIn.forEach(element =>{
   });
 });
 
+gsap.to('.content', {
+  duration: .5,
+  ease: "slow",
+  opacity: 1,
+});
 // gsap.to(".fade-in-2",{
 //   duration: 1,
 //   start: 'center center',
